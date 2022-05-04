@@ -2,7 +2,7 @@ class Game
   TOTAL_ERRORS_ALLOWED = 7
 
   def initialize(word)
-    @letters = word.chars
+    @letters = word.upcase.chars
     @user_guesses = []
   end
 
@@ -19,15 +19,11 @@ class Game
   end
 
   def letters_to_guess
-    result =
       @letters.map do |letter|
         if @user_guesses.include?(normalize_letter(letter))
           letter
-        else
-          nil
         end
       end
-    result
   end
 
   def lost?
@@ -36,10 +32,10 @@ class Game
 
   def normalize_letter(letter)
     case letter
-    when 'Ё'
-      'Е'
-    when 'Й'
-      'И'
+    when "Ё"
+      "Е"
+    when "Й"
+      "И"
     else
       letter
     end
@@ -58,7 +54,6 @@ class Game
       @user_guesses << normalize_letter(letter)
     end
   end
-
 
   def won?
     (normalized_letters - @user_guesses).empty?
