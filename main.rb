@@ -7,10 +7,12 @@ if Gem.win_platform?
   end
 end
 
+require "colorized_string"
+require "colorize"
 require_relative "lib/console_interface"
 require_relative "lib/game"
 
-puts "Всем привет!"
+puts "Всем привет!".colorize(:light_blue)
 
 word = File.readlines(File.join(__dir__, "/data/words.txt"), encoding: "UTF-8", chomp: true).sample
 game = Game.new(word)

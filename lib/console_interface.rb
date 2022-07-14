@@ -9,13 +9,11 @@ class ConsoleInterface
   end
 
   def print_out
-    puts <<~HANGMAN_ZONE
-      Слово: #{word_to_show}
-      #{figure}
-      Ошибки (#{@game.errors_made}): #{errors_to_show}
-      У вас осталось ошибок: #{@game.errors_allowed}
-
-    HANGMAN_ZONE
+    puts "Слово: #{word_to_show}".colorize(:light_blue)
+    puts figure
+    puts "Ошибки (#{@game.errors_made}): #{errors_to_show}".colorize(:red).on_green.underline
+    puts "У вас осталось ошибок: #{@game.errors_allowed}"
+    puts
 
     if @game.won?
       puts "Поздравляем, вы выиграли!"
@@ -25,11 +23,11 @@ class ConsoleInterface
   end
 
   def figure
-    FIGURES[@game.errors_made]
+    FIGURES[@game.errors_made].colorize(:yellow)
   end
 
   def word_to_show
-    @game.letters_to_guess.map { |letter| letter || "__"}.join(" ")
+    @game.letters_to_guess.map {|letter| letter || "__"}.join(" ")
   end
 
   def errors_to_show
