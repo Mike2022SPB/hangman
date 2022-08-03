@@ -6,9 +6,7 @@ Installation:
 1. On the page "https://github.com/Mike2022SPB/hangman " click "Code" >> "Download ZIP";
 2. Unpack the contents of the ZIP archive;
 3. Run the command prompt;
-4. In the command line, enter:
-4.1. cd you_path_before_hangman/hangman/ press "Enter";
-4.2. bundle install press "Enter";
+4. In the command line, type: <code>cd you_path_before_hangman/hangman/</code> press "Enter" and <code>bundle install</code> press "Enter";
 
 To start the game: 
 1. In the command line in the folder with the main.rb file, type: <code>bundle exec ruby main.rb</code>;
