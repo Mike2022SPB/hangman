@@ -1,27 +1,27 @@
 # hangman
 
-Hangman это игра для командной строки созданная на языке ruby. 
+Hangman is a command line game created in ruby. 
 
-Установка:
-1. На странице "https://github.com/Mike2022SPB/hangman" нажмите кнопку "Code" >> "Download ZIP";
-2. Распакуйте содержимое ZIP архива;
-3. Запустите командную строку;
-4. В коммандной строке введите:
-4.1. cd you_path_before_hangman/hangman/ нажмите "Enter";
-4.2. bundle install нажмите "Enter";
+Installation:
+1. On the page "https://github.com/Mike2022SPB/hangman " click "Code" >> "Download ZIP";
+2. Unpack the contents of the ZIP archive;
+3. Run the command prompt;
+4. In the command line, enter:
+4.1. cd you_path_before_hangman/hangman/ press "Enter";
+4.2. bundle install press "Enter";
 
-Для запуска игры: 
-1. В коммандной строке в папке с файлом main.rb введите: bundle exec ruby main.rb;
-2. Нажмите два раза на указанный файл;
+To start the game: 
+1. In the command line in the folder with the main.rb file, type: <code>bundle exec ruby main.rb</code>;
+2. Double-click on the specified file;
 3. Enjoy.
 
-Правила игры заключаются в следующем:
-Игроку предлагается отгадать слово используя интерфейс для ввода по буквам, в случае, если игрок угадал букву она появляется в слове
-на месте её нахождения, в случае же ошибки, игрок теряет 1 попытку, неправильная буква отображается в интерфейсе.
+The rules of the game are as follows:
+The player is asked to guess the word using the interface for typing letters, if the player guessed the letter, it appears in the word
+at its location, in case of an error, the player loses 1 attempt, the wrong letter is displayed in the interface.
 
-Одна игровая партия расчитана на 7 попыток.
+One game game is designed for 7 attempts.
 
-Для расширения функционала игры возможно добавление новых слов, через выполнение следующих действий:
-1. Откройте папку дата и в ней файл words.txt: ./data/words.txt
-2. Добавьте в конец файла найденные вами слова, слова должны быть указаны в верхнем регистре.
-3. Сохраните и закройте файл words.txt
+To expand the functionality of the game, it is possible to add new words by performing the following actions:
+1. Open the date folder and the file in it words.txt : ./data/words.txt
+2. Add the words you found to the end of the file, the words must be indicated in uppercase.
+3. Save and close the file words.txt
