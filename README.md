@@ -1,4 +1,4 @@
-# hangman
+# Hangman
 
 Hangman is a command line game created in ruby. 
 
