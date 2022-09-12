@@ -3,10 +3,9 @@
 Hangman is a command line game created in ruby. 
 
 Installation:
-1. On the page "https://github.com/Mike2022SPB/hangman " click "Code" >> "Download ZIP";
-2. Unpack the contents of the ZIP archive;
-3. Run the command prompt;
-4. In the command line, type: <code>cd you_path_before_hangman/hangman/</code> press "Enter" and <code>bundle install</code> press "Enter";
+1. On the page [https://github.com/Mike2022SPB/hangman](https://github.com/Mike2022SPB/hangman) click "Code" >> and copy path:<code>git<span></span>@github.com:Mike2022SPB/hangman.git</code>;
+2. In terminal type:<code>git clone git@github<span></span>.com:Mike2022SPB/hangman.git</code> and press "Enter";
+3. In the command line, type: <code>bundle install</code> and press "Enter".
 
 To start the game: 
 1. In the command line in the folder with the main.rb file, type: <code>bundle exec ruby main.rb</code>;
